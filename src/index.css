@@ -1,0 +1,41 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+/* @import "bootstrap/dist/js/bootstrap.bundle.min.js"; */
+/* Custom color variables */
+:root{
+    --bs-primary: #007BFF; /*BLUE*/
+    --bs-success: #28A745;
+    --bs-purple: #6F42C1;
+    --bs-warning: #FFC107;
+}
+
+.bg-primary, .btn-primary{
+    background-color: var(--bs-primary) !important;
+}
+
+.text-primary{
+    color: var(--bs-primary) !important;
+}
+
+.bg-success, .btn-success{
+    background-color: var(--bs-success) !important;
+}
+
+.text-success{
+    color: var(--bs-success) !important;
+}
+
+.bg-purple, .btn-purple{
+    background-color: var(--bs-purple) !important;
+}
+
+.text-purple{
+    color: var(--bs-purple);
+}
+
+.bg-warning, .btn-warning{
+    background-color: var(--bs-warning) !important;
+}
+
+.text-warning{
+    color: var(--bs-warning) !important;
+}

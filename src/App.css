@@ -1,0 +1,166 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* src/App.css (or your preferred CSS file) */
+
+/* Hero Section Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .explore-button {
+    background-color: transparent !important;
+    color: #007BFF !important;
+    border: 2px solid #007BFF !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    margin: 5px !important;
+  }
+  
+  .become-vendor-button {
+    background-color: #28A745 !important;
+    color: white !important;
+    border: 2px solid #28A745 !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    margin: 5px !important;
+  }
+  
+  /* Responsive adjustments for hero buttons */
+  @media (max-width: 576px) {
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .explore-button, .become-vendor-button {
+      width: 100%;
+      margin: 5px 0 !important;
+    }
+  }
+  
+  /* General Section Title */
+  .section-title {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #f8f9fa; /* Light Gray */
+  }
+  
+  /* Social Icon Colors */
+  .social-icons .facebook {
+    color: #1877f2;
+  }
+  
+  .social-icons .twitter {
+    color: #1da1f2;
+  }
+  
+  .social-icons .instagram {
+    color: #e4405f;
+  }
+  
+  /* CSS Animations (Example - subtle fade-in on page load) */
+  .container {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  .featured-products{
+    margin-top: 20px;
+  }
+
+  .product-card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .product-image{
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-title{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #333;
+  }
+
+  .product-vendor{
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 0.2rem;
+  }
+
+  .product-card .bg-warning{
+    border-radius: 0 0 0 8px;
+  }
+
+  .footer-dark{
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  .footer-dark .text-muted{
+    color: #aaa !important;
+  }
+
+  .footer-dark .social-icons a{
+    color: #fff !important;
+  }
+
+  .footer-dark .facebook{
+    color: #1877f2 !important;
+  }
+
+  .footer-dark .twitter{
+    color: #1da1f2 !important;
+  }
+
+  .footer-dark .instagram{
+    color: #e4405f !important;
+  }
+
+  .footer-dark .privacy-link,
+  .footer-dark .terms-link{
+    color: #aaa !important;
+  }
+
+  .footer-dark .privacy-link:hover,
+  .footer-dark .terms-link:hover{
+    color: #fff !important;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 768px){
+    .hero-buttons{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .explore-button,
+    .become-vendor-button{
+        flex: 1;
+        margin: 5px;
+    }
+  }
+
+  @media (max-width: 576px){
+    .explore-button,
+    .become-vendor-button{
+        font-size: 0.8rem;
+        padding: 6px 12px !important;
+    }
+  }
+  /* You can add more animations as needed for other elements */
+  
