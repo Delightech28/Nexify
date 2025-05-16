@@ -4,6 +4,9 @@ import { FaSearch, FaStore } from 'react-icons/fa';
 import FeaturedProducts from './FeaturedProducts';
 import Footer from './Footer';
 import heroImage from '../assets/hero-banner.jpg'; // Import your background image
+import Newsletter from './Newsletter';
+import Testimonials from './Testimonials';
+import USPs from './USPs';
 
 function LandingPage() {
   return (
@@ -30,7 +33,7 @@ function LandingPage() {
           <Link to="/products" className="btn explore-button">
             <FaSearch className="me-2" /> Explore Products
           </Link>
-          <Link to="/vendor/register" className="btn become-vendor-button">
+          <Link to="/signup/vendor" className="btn become-vendor-button">
             <FaStore className="me-2" /> Become a Vendor
           </Link>
         </div>
@@ -74,6 +77,9 @@ function LandingPage() {
       </section>
 
       <FeaturedProducts />
+      <USPs />
+      <Testimonials />
+      <Newsletter />
       <Footer />
     </div>
   );

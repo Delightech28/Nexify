@@ -137,6 +137,18 @@
   .footer-dark .terms-link:hover{
     color: #fff !important;
   }
+
+  /* USPs Section */
+.usp-title {
+  color: #333;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.usp-description {
+  color: #777;
+}
+
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -160,6 +172,9 @@
     .become-vendor-button{
         font-size: 0.8rem;
         padding: 6px 12px !important;
+    }
+    .hero-subtitle{
+      font-size: 0.9rem;
     }
   }
   /* You can add more animations as needed for other elements */

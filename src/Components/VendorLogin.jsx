@@ -1,0 +1,72 @@
+// src/pages/VendorLogin.jsx
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaGoogle, FaFacebook, FaInstagram } from 'react-icons/fa';
+
+function VendorLogin() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // In a real application, you would send this data to your backend for authentication
+    console.log('Vendor Login Data:', { email, password });
+    setError('Login successful (frontend simulation)');
+    // Optionally redirect user
+  };
+
+  return (
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-6 col-lg-5">
+          <div className="card shadow-sm p-4">
+            <h2 className="text-center mb-4">Vendor Log In</h2>
+            {error && <div className="alert alert-danger">{error}</div>}
+            <form onSubmit={handleSubmit}>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">Email address</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label">Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
+              <button type="submit" className="btn btn-primary w-100 mb-3">Log In</button>
+            </form>
+            <div className="d-grid gap-2">
+              <button className="btn btn-outline-secondary">
+                <FaGoogle className="me-2" /> Log In with Google
+              </button>
+              <button className="btn btn-outline-secondary">
+                <FaFacebook className="me-2" /> Log In with Facebook
+              </button>
+              <button className="btn btn-outline-secondary">
+                <FaInstagram className="me-2" /> Log In with Instagram
+              </button>
+            </div>
+            <p className="mt-3 text-center">
+              Don't have an account? <Link to="/signup/vendor">Sign Up</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default VendorLogin;

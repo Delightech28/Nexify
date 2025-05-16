@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-3">
       <div className="container-fluid">
-        <Link className="navbar-brand mx-2" to="/" style={{ color: '#007BFF', fontWeight: 'bold', fontSize: '1.5rem' }}>
+        <Link className="navbar-brand mx-2" to="/" style={{ color: '#28A745', fontWeight: 'bold', fontSize: '1.5rem' }}>
           Nexify
         </Link>
         <button
@@ -42,12 +42,12 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link" to="/login">
+              <Link className="nav-link" to="/login/buyer">
                 <FaSignInAlt className="me-2" /> Login
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link" to="/register" style={{ color: '#28A745' }}>
+              <Link className="nav-link" to="/signup/buyer" style={{ color: '#28A745' }}>
                 <FaUserPlus className="me-2" /> Register
               </Link>
             </li>
