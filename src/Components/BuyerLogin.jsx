@@ -1,3 +1,5 @@
+
+
 // src/pages/BuyerLogin.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,10 +12,8 @@ function BuyerLogin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real application, you would send this data to your backend for authentication
     console.log('Buyer Login Data:', { email, password });
     setError('Login successful (frontend simulation)');
-    // Optionally redirect user
   };
 
   return (
@@ -46,14 +46,14 @@ function BuyerLogin() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100 mb-3">Log In</button>
+              <button type="submit" className="btn btn-primary w-100 mb-3" style={{ backgroundColor: '#007BFF', borderColor: '#007BFF' }}>Log In</button>
             </form>
             <div className="d-grid gap-2">
-              <button className="btn btn-outline-secondary">
-                <FaGoogle className="me-2" /> Log In with Google
+              <button className="btn btn-outline-secondary" style={{ color: '#4285F4' }}>
+                <FaGoogle className="me-2" style={{ color: '#4285F4' }} /> Log In with Google
               </button>
-              <button className="btn btn-outline-secondary">
-                <FaFacebook className="me-2" /> Log In with Facebook
+              <button className="btn btn-outline-secondary" style={{ color: '#1877F2' }}>
+                <FaFacebook className="me-2" style={{ color: '#1877F2' }} /> Log In with Facebook
               </button>
             </div>
             <p className="mt-3 text-center">
@@ -67,3 +67,4 @@ function BuyerLogin() {
 }
 
 export default BuyerLogin;
+

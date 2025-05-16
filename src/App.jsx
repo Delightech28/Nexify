@@ -19,7 +19,7 @@ function App() {
         <Route path="/login/buyer" element={<BuyerLogin />} />
         <Route path="/signup/vendor" element={<VendorSignup />} />
         <Route path="/login/vendor" element={<VendorLogin />} />
-        <Route path="/become-a-vendor" element={<BecomeAVendor />} />
+        <Route path="/becomeavendor" element={<BecomeAVendor />} />
       </Routes>
     </div>
     </div>
