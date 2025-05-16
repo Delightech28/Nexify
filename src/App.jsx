@@ -6,7 +6,7 @@ import BuyerSignup from './Components/BuyerSignup';
 import BuyerLogin from './Components/BuyerLogin';
 import VendorSignup from './Components/VendorSignup';
 import VendorLogin from './Components/VendorLogin';
-
+import BecomeAVendor from './Components/BecomeAVendor';
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
         <Route path="/login/buyer" element={<BuyerLogin />} />
         <Route path="/signup/vendor" element={<VendorSignup />} />
         <Route path="/login/vendor" element={<VendorLogin />} />
+        <Route path="/become-a-vendor" element={<BecomeAVendor />} />
       </Routes>
     </div>
     </div>

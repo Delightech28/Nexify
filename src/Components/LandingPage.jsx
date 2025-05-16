@@ -33,7 +33,7 @@ function LandingPage() {
           <Link to="/products" className="btn explore-button">
             <FaSearch className="me-2" /> Explore Products
           </Link>
-          <Link to="/signup/vendor" className="btn become-vendor-button">
+          <Link to="/become-a-vendor" className="btn become-vendor-button">
             <FaStore className="me-2" /> Become a Vendor
           </Link>
         </div>
