@@ -1,4 +1,3 @@
-// src/pages/VendorSignup.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaFacebook, FaInstagram } from 'react-icons/fa';
@@ -60,17 +59,17 @@ function VendorSignup() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100 mb-3" style={{ backgroundColor: '#007BFF', borderColor: '#007BFF' }}>Sign Up</button>
+              <button type="submit" className="btn btn-primary w-100 mb-3" style={{ backgroundColor: '#28A745' }}>Sign Up</button>
             </form>
             <div className="d-grid gap-2">
-              <button className="btn btn-outline-secondary" style={{ color: '#4285F4' }}>
-                <FaGoogle className="me-2" style={{ color: '#4285F4' }} /> Sign Up with Google
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#4285F4' }}>
+                <FaGoogle className="me-2" /> Sign Up with Google
               </button>
-              <button className="btn btn-outline-secondary" style={{ color: '#1877F2' }}>
-                <FaFacebook className="me-2" style={{ color: '#1877F2' }} /> Sign Up with Facebook
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#1877F2' }}>
+                <FaFacebook className="me-2" /> Sign Up with Facebook
               </button>
-              <button className="btn btn-outline-secondary" style={{ color: '#E4405F' }}>
-                <FaInstagram className="me-2" style={{ color: '#E4405F' }} /> Sign Up with Instagram
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#E4405F' }}>
+                <FaInstagram className="me-2" /> Sign Up with Instagram
               </button>
             </div>
             <p className="mt-3 text-center">
@@ -84,3 +83,4 @@ function VendorSignup() {
 }
 
 export default VendorSignup;
+
