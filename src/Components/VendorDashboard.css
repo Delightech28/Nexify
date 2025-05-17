@@ -1,0 +1,49 @@
+/* src/components/VendorDashboard.css */
+.vendor-dashboard {
+    min-height: 80vh; /* Adjust as needed */
+  }
+  
+  .dashboard-sidebar {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-right: 1px solid #eee;
+  }
+  
+  .dashboard-sidebar h3 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .dashboard-nav {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-nav li {
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-nav li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    border-radius: 5px;
+  }
+  
+  .dashboard-nav li a:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .dashboard-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  

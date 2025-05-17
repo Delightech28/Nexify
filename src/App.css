@@ -29,6 +29,10 @@
     font-size: 0.9rem !important;
     margin: 5px !important;
   }
+
+  .signup{
+    background-color: #28A745 !important;
+  }
   
   /* Responsive adjustments for hero buttons */
   @media (max-width: 576px) {

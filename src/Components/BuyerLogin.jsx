@@ -44,13 +44,13 @@ function BuyerLogin() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100 mb-3" style={{ backgroundColor: '#28A745'}}>Log In</button>
+              <button type="submit" className="btn w-100 mb-3" style={{ backgroundColor: '#28A745', color: '#FFFFFF'}}>Log In</button>
             </form>
             <div className="d-grid gap-2">
-              <button className="btn btn-block text-white" style={{ backgroundColor: '#4285F4' }}>
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#2F79F4' }}>
                 <FaGoogle className="me-2" /> Log In with Google
               </button>
-              <button className="btn btn-block text-white" style={{ backgroundColor: '#1877F2' }}>
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#1A78F4' }}>
                 <FaFacebook className="me-2" /> Log In with Facebook
               </button>
             </div>

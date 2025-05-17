@@ -59,7 +59,7 @@ function VendorSignup() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100 mb-3" style={{ backgroundColor: '#28A745' }}>Sign Up</button>
+              <button type="submit" className="bt w-100 mb-3 signup" style={{ backgroundColor: '#28A745' }}>Sign Up</button>
             </form>
             <div className="d-grid gap-2">
               <button className="btn btn-block text-white" style={{ backgroundColor: '#4285F4' }}>

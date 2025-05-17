@@ -60,13 +60,13 @@ function BuyerSignup() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100 mb-3" style={{ backgroundColor: '#28A745' }}>Sign Up</button>
+              <button type="submit" className="btn w-100 mb-3" style={{ backgroundColor: '#28A745', color: '#FFFFFF' }}>Sign Up</button>
             </form>
             <div className="d-grid gap-2">
-              <button className="btn btn-block text-white" style={{ backgroundColor: '#4285F4' }}>
-                <FaGoogle className="me-2" /> Sign Up with Google
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#2F79F4' }}>
+                <FaGoogle className="me-2" style={{ color: ''}}/> Sign Up with Google
               </button>
-              <button className="btn btn-block text-white" style={{ backgroundColor: '#1877F2' }}>
+              <button className="btn btn-block text-white" style={{ backgroundColor: '#1A78F4' }}>
                 <FaFacebook className="me-2" /> Sign Up with Facebook
               </button>
             </div>

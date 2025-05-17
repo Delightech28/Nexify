@@ -7,6 +7,10 @@ import BuyerLogin from './Components/BuyerLogin';
 import VendorSignup from './Components/VendorSignup';
 import VendorLogin from './Components/VendorLogin';
 import BecomeAVendor from './Components/BecomeAVendor';
+import VendorDashboard from './Components/VendorDashboard';
+// import ProductBuilder from './Components/ProductBuilder';
+// import InventoryManager from './Components/InventoryManager';
+// import OrderManagement from './Components/OrderManagement';
 function App() {
   return (
     <Router>
@@ -20,6 +24,11 @@ function App() {
         <Route path="/signup/vendor" element={<VendorSignup />} />
         <Route path="/login/vendor" element={<VendorLogin />} />
         <Route path="/becomeavendor" element={<BecomeAVendor />} />
+        <Route path="/vendor/dashboard" element={<VendorDashboard />} />
+        {/* <Route path="/vendor/dashboard/product-builder" element={<ProductBuilder />} />
+        <Route path="/vendor/dashboard/inventory" element={<InventoryManager />} />
+        <Route path="/vendor/dashboard/orders" element={<OrderManagement />} /> */}
+        
       </Routes>
     </div>
     </div>
