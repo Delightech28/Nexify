@@ -20,6 +20,7 @@ function VendorLogin() {
         <div className="col-md-6 col-lg-5">
           <div className="card shadow-sm p-4">
             <h2 className="text-center mb-4">Vendor Log In</h2>
+            <Link className="nav-link text-center" to="/vendor/dashboard">View Vendor DashBoard</Link>
             {error && <div className="alert alert-danger">{error}</div>}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
