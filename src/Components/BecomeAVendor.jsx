@@ -59,7 +59,7 @@ function BecomeAVendor() {
             </section>
 
             <section className="mb-5">
-              <h2 className="h4 mb-4 fw-bold"><FaListAlt className="me-2 text-secondary" /> Getting Started is Simple</h2>
+              <h2 className="h4 mb-4 fw-bold" style={{color: 'black'}}><FaListAlt className="me-2" style={{color: 'purple'}}/> Getting Started is Simple</h2>
               <ol className="list-group list-group-numbered">
                 <li className="list-group-item fs-5">Create your professional vendor account.</li>
                 <li className="list-group-item fs-5">Set up your secure shop profile and preferred payment details.</li>
@@ -70,11 +70,11 @@ function BecomeAVendor() {
 
             <div className="text-center mt-5">
               <p className="lead mb-3">Ready to embark on this exciting journey?</p>
-              <Link to="/signup/vendor" className="btn btn-primary btn-lg me-md-3 mb-2 mb-md-0">
+              <Link to="/signup/vendor" className="btn me-md-3 mb-2 mb-md-0" style={{ backgroundColor: '#28A745', color: '#FFFFFF'}}>
                 Sign Up as a Vendor
               </Link>
               <p className="mt-3 mb-2">Already part of our community?</p>
-              <Link to="/login/vendor" className="btn btn-outline-secondary btn-md">
+              <Link to="/login/vendor" className="btn btn-outline-primary btn-md">
                 Vendor Log In
               </Link>
             </div>

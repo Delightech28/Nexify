@@ -1,18 +1,24 @@
 // src/pages/VendorLogin.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaGoogle, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 function VendorLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Vendor Login Data:', { email, password });
     setError('Login successful (frontend simulation)');
   };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+    };
+   
 
   return (
     <div className="container mt-5">
@@ -34,32 +40,39 @@ function VendorLogin() {
                   required
                 />
               </div>
-              <div className="mb-3">
-                <label htmlFor="password" className="form-label">Password</label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-              </div>
+              <div className="mb-3 position-relative">
+  <label htmlFor="password" className="form-label">Password</label>
+  <input
+  type={showPassword ? 'text' : 'password'} // Toggle input type
+  className="form-control"
+  id="password"
+  value={password}
+  onChange={(e) => setPassword(e.target.value)}
+  required
+  />
+  <span
+  className="position-absolute end-0 translate-middle me-2" // Positioning for the icon
+  style={{ cursor: 'pointer', marginTop: '-20px'}}
+  onClick={togglePasswordVisibility}
+  >
+  {showPassword ? <FaEyeSlash /> : <FaEye />}
+  </span>
+  </div>
               <button type="submit" className="btn w-100 mb-3" style={{ backgroundColor: '#28A745', color: '#FFFFFF'}}>Log In</button>
             </form>
             <div className="d-grid gap-2">
               <button className="btn btn-block text-white" style={{ backgroundColor: '#4285F4' }}>
-                <FaGoogle className="me-2" /> Log In with Google
+              <img src='/Google.png' className='me-2' style={{width: '30px'}}/>  Log In with Google
               </button> 
               <button className="btn btn-block text-white" style={{ backgroundColor: '#1877F2' }}>
-                <FaFacebook className="me-2" /> Log In with Facebook
+             <img src='/fb.png' className='me-2' style={{width: '30px'}}/>    Log In with Facebook
               </button>
               <button className="btn btn-block text-white" style={{ backgroundColor: '#E4405F' }}>
-                <FaInstagram className="me-2" /> Log In with Instagram
+               <img src='/Instagram.png' className='me-2' style={{width: '30px'}}/>   Log In with Instagram
               </button>
             </div>
             <p className="mt-3 text-center">
-              Don't have an account? <Link to="/signup/vendor">Sign Up</Link>
+              Don't have an account? <Link to="/signup/vendor" style={{color: '#28A745'}}>Sign Up</Link>
             </p>
           </div>
         </div>
